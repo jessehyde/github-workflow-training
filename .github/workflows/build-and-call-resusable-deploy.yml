@@ -25,7 +25,7 @@ jobs:
           
   call-resusable-deployment-workflow-job:
     needs: build_job
-    uses: ./.github/workflows/reusable-deploy.yml
+    uses: jessehyde/shared-workflows/.github/workflows/reusable-deploy-shared-repo.yml@main
     with:
       package-name: .net-app
       app-name: appsvc1
